@@ -133,6 +133,10 @@
     .playerwon{
         font-size: 3rem;
     }
+
+    .player-result{
+        margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width: 412px) {
@@ -149,11 +153,12 @@
         font-size: 3rem;
     }
     .player-result{
-        margin: 3.5rem 7rem 3.5rem 8rem;
+        margin: 5rem 7rem 3.5rem 8rem;
     }
     .dices{
         gap: 30%;
         flex-basis: 20%;
+        justify-content: center;
     }
     .number-canvas{
         transform: translate(-50%, -50%) scale(0.75) !important;
@@ -161,6 +166,11 @@
 
     .roll{
         bottom: -90%;
+    }
+
+    .player-names{
+        justify-content: center;
+        gap: 15%;
     }
 
 }
