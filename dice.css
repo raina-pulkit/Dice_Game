@@ -106,7 +106,32 @@
 
 @media only screen and (max-width: 1120px) {
     .roll{
-        bottom: -100%;
+        bottom: -80%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .player-names{
+        margin-top: 8%;
+    }
+    .roll{
+        bottom: -60%;
+    }
+
+    .playerwon{
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .dices{
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .playerwon{
+        font-size: 3rem;
     }
 }
 
@@ -132,6 +157,10 @@
     }
     .number-canvas{
         transform: translate(-50%, -50%) scale(0.75) !important;
+    }
+
+    .roll{
+        bottom: -90%;
     }
 
 }
