@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    min-width: 550px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.player-result{
+    position: relative;
+    flex-basis: 20%;
+    margin: 3.5rem 8rem 0.5rem 8rem
+}
+
+.playerwon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: 'Agbalumo', sans-serif;
+    font-style: italic;
+    font-size: 5.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.refresh{
+    font-style: normal;
+}
+.one{
+    visibility: hidden;
+}
+
+.two{
+    visibility: hidden;
+}
+
+.draw{
+    visibility: hidden;
+}
+
+.player-names{
+    flex-basis: 10%;
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.player{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.dices{
+    flex-basis: 30%;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 18%;
+    position: relative;
+}
+
+.playerdice{
+    position: relative;
+    height: 10%;
+    padding: 10%;
+}
+
+.roll{
+    height: 7rem;
+    width: 7rem;
+    background-color: yellow;
+    position: absolute;
+    bottom: -10%;
+    border: 2px solid black;
+    border-radius: 100px;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.95));
+    cursor: pointer;
+    transition: all 0.07s ease;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.roll:hover{
+    background: rgb(197, 185, 185);
+}
+
+.roll:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(0.35rem);
+}
+
+@media only screen and (max-width: 1120px) {
+    .roll{
+        bottom: -100%;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .main-container{
+        min-width:auto;
+        width: 100%;
+        height: 100vh;
+    }
+    .refresh{
+        font-size: 4rem;
+    }
+    .playerwon{
+        width: 30rem;
+        font-size: 3rem;
+    }
+    .player-result{
+        margin: 3.5rem 7rem -3.5rem 8rem;
+    }
+    .dices{
+        gap: 30%;
+        flex-basis: 20%;
+    }
+    .number-canvas{
+        transform: translate(-50%, -50%) scale(0.75) !important;
+    }
+
+}
