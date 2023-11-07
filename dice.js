@@ -47,3 +47,11 @@ function getNewWinner(){
     firstPast = p1;
     secondPast = p2;
 }
+
+$(".roll").click(function (){
+    var item = $(".playerdice");
+    item.blur();
+    for(var i = 0; i<2; i++)
+        $(".playerdice").animate({left: "-=10px"}, 100).animate({left: "+=10px"}, 100);
+    // $(".number-canvas")
+});
