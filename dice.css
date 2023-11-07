@@ -28,6 +28,7 @@
     font-style: italic;
     font-size: 5.5rem;
     text-align: center;
+    min-width: min-content;
     padding-bottom: 1rem;
 }
 
